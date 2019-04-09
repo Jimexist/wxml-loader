@@ -163,9 +163,9 @@ export default function(content) {
     if (!isSourceAbsolute && !hasProcotol(source)) {
       source = ensureStartsWithDot(source);
     }
-    if (enforceRelativePath && isSourceAbsolute) {
-      source = ensureRelativePath(source);
-    }
+    // if (enforceRelativePath && isSourceAbsolute) {
+    //   source = ensureRelativePath(source);
+    // }
 
     /* istanbul ignore else */
     if (typeof transformUrl === "function") {

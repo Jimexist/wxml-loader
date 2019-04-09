@@ -1,4 +1,4 @@
-import { resolve, dirname } from "path";
+import { resolve, dirname, relative } from "path";
 import Config from "webpack-chain";
 
 export default (options = {}, chainWebpack) => {
@@ -24,7 +24,6 @@ export default (options = {}, chainWebpack) => {
     .loader("file-loader")
     .options({
       name: "[name].[ext]",
-      useRelativePath: true,
       context
     })
     .end()
@@ -45,7 +44,6 @@ export default (options = {}, chainWebpack) => {
     .loader("file-loader")
     .options({
       name: "[name].[ext]",
-      useRelativePath: true,
       context
     })
     .end()
