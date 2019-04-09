@@ -104,9 +104,11 @@ export default function(content) {
     transformContent = content => {
       switch (target.name) {
         case "Alipay":
-          return content.replace(/\bwx:/g, "a:");
+          return content.replace(/\bwx:/g, "a:").replace(/\bswan:/g, "a:");
         case "Wechat":
-          return content.replace(/\ba:/g, "wx:");
+          return content.replace(/\ba:/g, "wx:").replace(/\bswan:/g, "wx:");
+        case "Baidu":
+          return content.replace(/\ba:/g, "swan:").replace(/\bwx:/g, "swan:");
         default:
           return content;
       }
@@ -114,9 +116,11 @@ export default function(content) {
     transformUrl = url => {
       switch (target.name) {
         case "Alipay":
-          return url.replace(/\.wxml$/g, ".axml");
+          return url.replace(/\.wxml$/g, ".axml").replace(/\.swan$/g, ".axml");
         case "Wechat":
-          return url.replace(/\.axml$/g, ".wxml");
+          return url.replace(/\.axml$/g, ".wxml").replace(/\.swan$/g, ".wxml");
+        case "Baidu":
+          return url.replace(/\.wxml$/g, ".swan").replace(/\.axml$/g, ".swan");
         default:
           return url;
       }
