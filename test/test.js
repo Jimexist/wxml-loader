@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import { resolve } from "path";
 import rimraf from "rimraf";
 import { readFileSync, writeFileSync } from "fs";
@@ -35,7 +36,7 @@ const compile = (content, options = {}, chainWebpack) => {
   });
 };
 
-describe("wxml-loader", async () => {
+describe("wxml-loader", () => {
   beforeEach(mkdir);
   afterEach(clear);
 
