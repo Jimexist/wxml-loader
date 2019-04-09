@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Jimexist/mini-program-xml-loader.svg?branch=master)](https://travis-ci.org/Jimexist/mini-program-xml-loader)
 ![npm (scoped)](https://img.shields.io/npm/v/@jimexist/mini-program-xml-loader.svg)
+![GitHub](https://img.shields.io/github/license/Jimexist/mini-program-xml-loader.svg)
 
 wxml loader for webpack
 
@@ -134,7 +135,3 @@ export default env => ({
 
 For a complete guild to use `webpack` to develop `WeiXin App`, please checkout
 my [wxapp-boilerplate](https://github.com/cantonjs/wxapp-boilerplate) repo.
-
-## License
-
-MIT
