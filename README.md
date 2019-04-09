@@ -17,7 +17,7 @@ The branch you are currently browsing is **forked from [Cap32/wxml-loader](https
 
 ## Installation
 
-```bash
+```sh
 yarn add -D @jimexist/mini-program-xml-loader
 ```
 
@@ -125,7 +125,6 @@ export default env => ({
     ]
   },
   plugin: [
-    // ...other
     new WXAppWebpackPlugin()
   ]
 });
