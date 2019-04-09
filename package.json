@@ -9,10 +9,11 @@
     "lib"
   ],
   "scripts": {
+    "clean": "rimraf lib",
     "start": "jest test --watch",
     "test": "jest test --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
-    "prebuild": "rimraf lib",
+    "prebuild": "npm run clean",
     "build:watch": "babel src -d lib -w",
     "build": "babel src -d lib",
     "preversion": "yarn test && yarn build"
