@@ -1,6 +1,7 @@
 # @jimexist/mini-program-xml-loader
 
 [![Build Status](https://travis-ci.org/Jimexist/mini-program-xml-loader.svg?branch=master)](https://travis-ci.org/Jimexist/mini-program-xml-loader)
+![npm (scoped)](https://img.shields.io/npm/v/@jimexist/mini-program-xml-loader.svg)
 
 wxml loader for webpack
 
